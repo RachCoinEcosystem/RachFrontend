@@ -1,11 +1,10 @@
 import React from "react";
-import Navbar from "../components/home/Navbar";
-import HeroSection from "../components/home/HeroSection";
-import AboutSection from "../components/home/About";
-import Partners from "../components/home/Partners";
-import Product from "../components/home/Product";
-import Community from "../components/home/Community";
-import Footer from "../components/home/Footer";
+import Navbar from "./home/Navbar";
+import HeroSection from "./home/HeroSection";
+import AboutSection from "./home/About";
+import Partners from "./home/Partners";
+import Product from "./home/Product";
+import Community from "./home/Community";
 import backgroundImage from "../assets/bg/bg-1.jpg";
 
 const frontPage = () => (
@@ -24,7 +23,6 @@ const frontPage = () => (
       <Product />
       <Partners />
       <Community />
-      <Footer />
     </div>
 
   </div>

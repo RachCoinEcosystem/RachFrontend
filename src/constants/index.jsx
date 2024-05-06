@@ -1,26 +1,16 @@
-import React from "react";
+
 // Section7
-import Sec7Image1 from "../assets/section7/api.webp";
 import Sec7Image2 from "../assets/section7/grant-program.webp";
 // Section11
-import Near from "../assets/section11/near.svg";
 import Metamask from "../assets/section11/metamask.svg";
 import Trustwallet from "../assets/section11/trustwallet.svg";
-import Opium from "../assets/section11/opium.svg";
-import Zerion from "../assets/section11/zerion.svg";
-import Revolut from "../assets/section11/revolut.svg";
-import Pantera from "../assets/section11/pantera.svg";
 import Binancelab from "../assets/section11/binance-lab.svg";
-import Dragonflycapital from "../assets/section11/dragonfly-capital.svg";
-import Galaxydigital from "../assets/section11/galaxy-digital.svg";
-import Paraficapital from "../assets/section11/parafi-capital.svg";
 import Gemini from "../assets/section11/gemini.svg";
 import Mew from "../assets/section11/mew.svg";
 import Atoken from "../assets/section11/atoken.svg";
 import Dappradar from "../assets/section11/dappradar.svg";
-import Graph from "../assets/section11/graph.svg";
 import Staker from "../assets/section11/staker.svg";
-import Bitpay from "../assets/section11/bitPay.svg";
+
 
 export const navItems = [
   { label: "Roadmap", href: "#" },
