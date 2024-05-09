@@ -1,7 +1,7 @@
 import React from "react";
 import { BrowserRouter as Router, Routes, Route, Navigate } from "react-router-dom";
 import FrontPage from "./components/new";
-import LabSection from "./components/labs";
+import LabSection from "./components/labs/index";
 
 const App = () => {
   return (
