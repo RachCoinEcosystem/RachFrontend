@@ -11,9 +11,13 @@ import Atoken from "../assets/section11/atoken.svg";
 import Dappradar from "../assets/section11/dappradar.svg";
 import Staker from "../assets/section11/staker.svg";
 
+export const section1Content = {
+  title: "One-stop access",
+  subtitle: "to decentralized finance",
+};
 
 export const navItems = [
-  { label: "Roadmap", href: "#" },
+  { label: "About", href: "#" },
   { label: "News", href: "#" },
   { label: "Developers", href: "#" },
   { label: "Community", href: "#" },
