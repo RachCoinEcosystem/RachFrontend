@@ -4,7 +4,6 @@ import HeroSection from "./home/HeroSection";
 import AboutSection from "./home/About";
 import Partners from "./home/Partners";
 import Product from "./home/Product";
-import Community from "./home/Community";
 import backgroundImage from "../assets/bg/bg-1.jpg";
 
 const frontPage = () => (
@@ -22,7 +21,6 @@ const frontPage = () => (
       <AboutSection />
       <Product />
       <Partners />
-      <Community />
     </div>
 
   </div>

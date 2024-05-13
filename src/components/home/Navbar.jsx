@@ -1,6 +1,6 @@
 import { Menu, X } from "lucide-react";
 import { useState } from "react";
-import logo from "../../assets/logo192x192.png";
+import logo from "../../assets/bg/flogo.png";
 import { navItems } from "../../constants";
 import "../../assets/styles.css";
 
@@ -69,7 +69,7 @@ const Navbar = () => {
 
           <div className="hidden lg:flex justify-center space-x-12 items-center">
             <a
-              href="#"
+              href="/auth/signin"
               className="py-2 px-3 border rounded-md hover:bg-yellow-500"
             >
               Sign In
@@ -92,7 +92,7 @@ const Navbar = () => {
             </ul>
             <div className="flex space-x-6">
               <a
-                href="#"
+                href="/auth/signin"
                 className="py-2 px-3 border rounded-md  hover:bg-yellow-500"
               >
                 Sign In

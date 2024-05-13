@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Menu, X } from "lucide-react";
 import { navItems } from "../../constants";
-import logo from "../../assets/logo192x192.png";
+import logo from "../../assets/bg/flogo.png";
 import backgroundImage from "../../assets/bg/bg-1.jpg";
 import ideaImage from "../../assets/labs/idea.png";
 import helpImage from "../../assets/labs/needmoney.png";

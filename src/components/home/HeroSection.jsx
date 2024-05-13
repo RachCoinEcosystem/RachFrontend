@@ -22,7 +22,7 @@ const HeroSection = () => {
       </p>
       <div className="flex justify-center my-10 animate-bounce">
         <a
-          href="#"
+          href="/auth/signup"
           className="bg-gradient-to-r from-yellow-500 to-yellow-700 py-3 px-4 mx-3 rounded-md hover:text-gray-800"
         >
           Sign Up

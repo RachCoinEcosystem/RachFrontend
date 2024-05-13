@@ -1,7 +1,11 @@
 import React from "react";
 import { BrowserRouter as Router, Routes, Route, Navigate } from "react-router-dom";
-import FrontPage from "./components/new";
-import LabSection from "./components/labs/index";
+import FrontPage from "./components";
+import Footer from "./components/home/Footer";
+import LabSection from "./components/labs";
+import LoginPage from "./components/auth/Login";
+import SignupPage from "./components/auth/Signup";
+import ResetPasswordPage from "./components/auth/ResetPassword";
 
 const App = () => {
   return (
@@ -9,11 +13,12 @@ const App = () => {
       <Routes>
         <Route path="/" element={<FrontPage />} />
         <Route path="/labs" element={<LabSection />} />
-        {/* Add more routes as needed */}
-        {/* <Route path="/about" element={<AboutPage />} /> */}
-        {/* <Route path="/contact" element={<ContactPage />} /> */}
-        {/* <Route path="*" element={<Navigate to="/" />} /> */}
+        <Route path="/auth/signin" element={<LoginPage />} />
+        <Route path="/auth/signup" element={<SignupPage />} />
+        <Route path="auth/reset-password" element={<ResetPasswordPage />} />
+        <Route path="*" element={<Navigate to="/" />} />
       </Routes>
+      <Footer />
     </Router>
   );
 };
