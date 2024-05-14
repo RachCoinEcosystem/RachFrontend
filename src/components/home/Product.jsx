@@ -8,11 +8,16 @@ import Farming from "../../assets/farming.webp";
 
 const Product = () => {
   return (
-    <div className="container mx-auto py-8">
-      <h3 className="text-3xl font-semibold mb-6">RachCoin Products</h3>
+    <div className=" py-8">
+      <h3 className="text-sm sm:text-6xl lg:text-5xl text-center tracking-wide mt-20">RachCoin
+        <span className="bg-gradient-to-r from-yellow-500 to-yellow-700 text-transparent bg-clip-text">
+            {" "}
+            Products
+          </span>
+        </h3>
 
       {/* New product showcase */}
-      <div className="flex justify-center ">
+      <div className="flex justify-center mt-10 ">
         <div
           className="rounded-lg shadow-md overflow-hidden w-1/2 h-96 p-4 border-2 border-yellow-500 backdrop-blur-md border-b border-neutral-700/60"
           style={{
@@ -23,7 +28,7 @@ const Product = () => {
         >
           <a
             target="_blank"
-            href="/news"
+            href="/news/blog"
           >
             <div>
               <p className="bg-blue-500 text-white py-1 px-2 inline-block rounded">
@@ -56,7 +61,7 @@ const Product = () => {
         >
           <a
             target="_blank"
-            href="/news"
+            href="/news/blog"
           >
             {/* Staking */}
           <h4 className="text-blue-500 text-xl font-semibold mt-2 mb-4">Staking</h4>
@@ -77,7 +82,7 @@ const Product = () => {
         >
           <a
             target="_blank"
-            href="/news"
+            href="/news/blog"
           >
           <h4 className="text-blue-500 text-xl font-semibold mt-2 mb-4">Yield Farming</h4>
             <p className="text-blue-600 mb-4">
@@ -98,7 +103,7 @@ const Product = () => {
         >
           <a
             target="_blank"
-            href="/news"
+            href="/news/blog"
           >
           <h4 className="text-blue-500 text-xl font-semibold mt-2 mb-4">Play-to-Earn Games</h4>
             <p className="text-blue-600 mb-4">
@@ -119,7 +124,7 @@ const Product = () => {
         >
           <a
             target="_blank"
-            href="/news"
+            href="/news/blog"
           >
           <h4 className="text-blue-500 text-xl font-semibold mt-2 mb-4"> Governance & Voting</h4>
             <p className="text-blue-600 mb-4">
@@ -140,7 +145,7 @@ const Product = () => {
         >
           <a
             target="_blank"
-            href="/news"
+            href="/news/blog"
           >
           <h4 className="text-blue-500 text-xl font-semibold mt-2 mb-4">RachCoin Portfolio</h4>
             <p className="text-blue-600 mb-4">
@@ -160,7 +165,7 @@ const Product = () => {
         >
           <a
             target="_blank"
-            href="/news"
+            href="/news/blog"
           >
           <h4 className="text-blue-500 text-xl font-semibold mt-2 mb-4">NFT Market</h4>
             <p className="text-blue-600 mb-4">

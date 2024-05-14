@@ -18,8 +18,8 @@ export const section1Content = {
 
 export const navItems = [
   { label: "About", href: "#" },
-  { label: "News", href: "#" },
-  { label: "Developers", href: "#" },
+  { label: "News", href: "/news/blog" },
+  { label: "Developers", href: "/labs/devs" },
   { label: "Community", href: "#" },
 ];
 
