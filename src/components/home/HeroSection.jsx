@@ -26,7 +26,7 @@ const HeroSection = () => {
 
           Sign Up
         </Link>
-        <Link to="https://github.com/AdewunmiOladele/Document-/blob/main/README.md"
+        <Link to="https://github.com/RachCoinEcosystem/Rachcoin-Documentation"
           className="py-3 px-4 mx-3 rounded-md border hover:bg-gray-200 hover:text-gray-800"
         >
           Documentation
