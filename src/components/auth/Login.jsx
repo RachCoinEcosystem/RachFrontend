@@ -1,8 +1,9 @@
 import React, { useState } from "react";
 import backgroundImage from "../../assets/bg/bg-1.jpg";
 import logoImage from "../../assets/bg/flogo.png";
+import { Link } from "react-router-dom";
 
-const LoginPage = () => {
+const Login = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [rememberMe, setRememberMe] = useState(false);
@@ -26,11 +27,14 @@ const LoginPage = () => {
     >
       <div className="bg-black p-8 rounded-md shadow-md">
         <div className="text-center">
-          <img
-            src={logoImage}
-            alt="Rachcoin-logo"
-            className="Rachcoin-logo mx-auto"
-          />
+          <Link to="/">
+            <img
+                src={logoImage}
+                alt="Rachcoin-logo"
+                className="Rachcoin-logo mx-auto"
+              />
+          </Link>
+
           <h2 className="text-3xl font-bold mb-4">Login</h2>
         </div>
         <div className="mb-4 relative">
@@ -70,17 +74,17 @@ const LoginPage = () => {
           </button>
         </div>
         <div className="text-center">
-          <a href="/auth/reset-password" className="text-blue-500 hover:underline">
+          <Link to="/auth/reset-password" className="text-blue-500 hover:underline">
             Forgot password?
-          </a>
+          </Link>
           <span className="mx-2">|</span>
-          <a href="/auth/signup" className="text-blue-500 hover:underline">
+          <Link to="/auth/signup" className="text-blue-500 hover:underline">
             Sign up
-          </a>
+          </Link>
         </div>
       </div>
     </div>
   );
 };
 
-export default LoginPage;
+export default Login;

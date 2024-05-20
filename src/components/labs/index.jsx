@@ -8,6 +8,7 @@ import helpImage from "../../assets/labs/needmoney.png";
 import getfundImage from "../../assets/labs/getfund.png";
 import startImage from "../../assets/labs/getstarted.png";
 import "../../assets/styles.css";
+import { Link } from "react-router-dom";
 
 const LabSection = () => {
   const [mobileDrawerOpen, setMobileDrawerOpen] = useState(false);
@@ -21,19 +22,19 @@ const LabSection = () => {
       <nav className="sticky top-0 z-50 py-3 backdrop-blur-md border-b border-neutral-700/60">
         <div className="container px-4 mx-auto relative lg:text-sm">
           <div className="flex justify-between items-center">
-            <a href="/" className="flex items-center flex-shrink-0">
+            <Link to="/" className="flex items-center flex-shrink-0">
               <img className="h-10 w-10 mr-2 filter drop-shadow-md" src={logo} alt="Logo" />
               <span className="text-xl tracking-tight gold-text"><b>RACHCOIN</b></span>
-            </a>
+            </Link>
             <ul className="hidden lg:flex ml-14 space-x-12">
               {navItems.map((item, index) => (
                 <li key={index}>
-                  <a href={item.href || "#"} className="py-2 px-3 text-white-700 hover:bg-yellow-600 active:bg-orange-600">{item.label}</a>
+                  <Link to={item.href || "#"} className="py-2 px-3 text-white-700 hover:bg-yellow-600 active:bg-orange-600">{item.label}</Link>
                 </li>
               ))}
             </ul>
             <div className="hidden lg:flex justify-center space-x-12 items-center">
-              <a href="#" className="py-2 px-3 border rounded-md hover:bg-yellow-500">Sign In</a>
+              <Link to="/auth/signin" className="py-2 px-3 border rounded-md hover:bg-yellow-500">Sign In</Link>
             </div>
             <div className="lg:hidden md:flex flex-col justify-end">
               <button onClick={toggleNavbar}>{mobileDrawerOpen ? <X /> : <Menu />}</button>
@@ -44,12 +45,12 @@ const LabSection = () => {
               <ul>
                 {navItems.map((item, index) => (
                   <li key={index} className="py-4">
-                    <a href={item.href}>{item.label}</a>
+                    <Link to={item.href}>{item.label}</Link>
                   </li>
                 ))}
               </ul>
               <div className="flex space-x-6">
-                <a href="#" className="py-2 px-3 border rounded-md  hover:bg-yellow-500">Sign In</a>
+                <Link to="/auth/signin" className="py-2 px-3 border rounded-md  hover:bg-yellow-500">Sign In</Link>
               </div>
             </div>
           )}
@@ -92,7 +93,7 @@ const LabSection = () => {
         </div>
         <div className="text-center">
           <h3 className="text-4xl text-neutral-100 mb-10">Projects</h3>
-          <p className="text-lg text-center text-neutral-100 mb-10">Check out some of the cool projects we have funded. <a href="#">Apply to be next!</a></p>
+          <p className="text-lg text-center text-neutral-100 mb-10">Check out some of the cool projects we have funded. <Link to="#">Apply to be next!</Link></p>
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
             {/* Add your project items here */}
           </div>
@@ -100,13 +101,13 @@ const LabSection = () => {
         <div className="text-center mb-16">
           <ul className="majorLinks flex justify-center space-x-8">
             <li>
-              <a href="#markets" className="link"><i className="fa fa-pencil mr-2"></i>Apply</a>
+              <Link to="#markets" className="link"><i className="fa fa-pencil mr-2"></i>Apply</Link>
             </li>
             <li>
-              <a href="#features" className="link"><i className="fa fa-flask mr-2"></i>Project</a>
+              <Link to="#features" className="link"><i className="fa fa-flask mr-2"></i>Project</Link>
             </li>
             <li>
-              <a href="#wallets" className="link">  <i className="fa fa-leanpub mr-2"></i>Learn More</a>
+              <Link to="#wallets" className="link">  <i className="fa fa-leanpub mr-2"></i>Learn More</Link>
             </li>
           </ul>
         </div>

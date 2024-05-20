@@ -4,6 +4,7 @@ import Portfolio from "../../assets/portfolio.webp";
 import Wallet from "../../assets/wallet-transfer.webp";
 import Earn from "../../assets/earn.webp";
 import Farming from "../../assets/farming.webp";
+import { Link } from "react-router-dom";
 
 
 const Product = () => {
@@ -26,9 +27,9 @@ const Product = () => {
             backgroundPosition: "center",
           }}
         >
-          <a
+          <Link to="/news/blog"
             target="_blank"
-            href="/news/blog"
+
           >
             <div>
               <p className="bg-blue-500 text-white py-1 px-2 inline-block rounded">
@@ -45,7 +46,7 @@ const Product = () => {
               </div>
               <div className="aspect-w-16 aspect-h-9 mb-2"></div>
             </div>
-          </a>
+          </Link>
         </div>
       </div>
 
@@ -59,16 +60,16 @@ const Product = () => {
             backgroundPosition: "center",
           }}
         >
-          <a
+          <Link to="/news/blog"
             target="_blank"
-            href="/news/blog"
+
           >
             {/* Staking */}
           <h4 className="text-blue-500 text-xl font-semibold mt-2 mb-4">Staking</h4>
             <p className="text-blue-600 mb-4">
               Earn rewards by participating in the RachCoin staking protocol.
             </p>
-          </a>
+          </Link>
         </div>
 
         {/* Yield Farming */}
@@ -80,16 +81,16 @@ const Product = () => {
             backgroundPosition: "center",
           }}
         >
-          <a
+          <Link to="/news/blog"
             target="_blank"
-            href="/news/blog"
+
           >
           <h4 className="text-blue-500 text-xl font-semibold mt-2 mb-4">Yield Farming</h4>
             <p className="text-blue-600 mb-4">
             Earn passive income by providing liquidity to the RachCoin
               liquidity pools.
             </p>
-          </a>
+          </Link>
         </div>
 
         {/* Play-to-Earn Games */}
@@ -101,16 +102,16 @@ const Product = () => {
             backgroundPosition: "center",
           }}
         >
-          <a
+          <Link to="/news/blog"
             target="_blank"
-            href="/news/blog"
+
           >
           <h4 className="text-blue-500 text-xl font-semibold mt-2 mb-4">Play-to-Earn Games</h4>
             <p className="text-blue-600 mb-4">
             Engage in fun and rewarding games that let you earn RachCoin
               tokens.
             </p>
-          </a>
+          </Link>
         </div>
 
         {/* Governance & Voting */}
@@ -122,16 +123,16 @@ const Product = () => {
             backgroundPosition: "center",
           }}
         >
-          <a
+          <Link to="/news/blog"
             target="_blank"
-            href="/news/blog"
+
           >
           <h4 className="text-blue-500 text-xl font-semibold mt-2 mb-4"> Governance & Voting</h4>
             <p className="text-blue-600 mb-4">
             Participate in the governance of the RachCoin ecosystem and vote
               on key proposals.
             </p>
-          </a>
+          </Link>
         </div>
 
         {/* RachCoin Portfolio */}
@@ -143,16 +144,15 @@ const Product = () => {
             backgroundPosition: "center",
           }}
         >
-          <a
+          <Link to="/news/blog"
             target="_blank"
-            href="/news/blog"
           >
           <h4 className="text-blue-500 text-xl font-semibold mt-2 mb-4">RachCoin Portfolio</h4>
             <p className="text-blue-600 mb-4">
             Track your RachCoin investments with our comprehensive portfolio
               management tool.
             </p>
-          </a>
+          </Link>
         </div>
         {/* NFT Market */}
         <div
@@ -163,15 +163,14 @@ const Product = () => {
             backgroundPosition: "center",
           }}
         >
-          <a
+          <Link to="/news/blog"
             target="_blank"
-            href="/news/blog"
           >
           <h4 className="text-blue-500 text-xl font-semibold mt-2 mb-4">NFT Market</h4>
             <p className="text-blue-600 mb-4">
             Mint and sell your Nft.
             </p>
-          </a>
+          </Link>
         </div>
       </div>
     </div>

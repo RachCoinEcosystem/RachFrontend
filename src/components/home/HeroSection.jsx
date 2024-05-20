@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import "../../assets/styles.css";
 import { socialMenuItems } from "../../constants";
 
@@ -21,45 +22,37 @@ const HeroSection = () => {
         privacy and control go hand-in-hand.!
       </p>
       <div className="flex justify-center my-10 animate-bounce">
-        <a
-          href="/auth/signup"
-          className="bg-gradient-to-r from-yellow-500 to-yellow-700 py-3 px-4 mx-3 rounded-md hover:text-gray-800"
-        >
+        <Link to="/auth/signup" className="bg-gradient-to-r from-yellow-500 to-yellow-700 py-3 px-4 mx-3 rounded-md hover:text-gray-800">
+
           Sign Up
-        </a>
-        <a
-          href="#"
+        </Link>
+        <Link to="https://github.com/AdewunmiOladele/Document-/blob/main/README.md"
           className="py-3 px-4 mx-3 rounded-md border hover:bg-gray-200 hover:text-gray-800"
         >
           Documentation
-        </a>
+        </Link>
       </div>
       <div>
         <ul className="majorLinks grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-5 items-center justify-center mt-8">
           <li className="majorLink">
-            <a href="#markets" className="link">
+            <Link to="#markets" className="link">
               <i className="fa fa-shopping-cart mr-2"></i> Buy
-            </a>
+            </Link>
           </li>
           <li className="majorLink">
-            <a href="#features" className="link">
+            <Link to="#features" className="link">
               <i className="fa fa-money-bill-alt mr-2"></i> Earn
-            </a>
+            </Link>
           </li>
           <li className="majorLink">
-            <a href="#wallets" className="link">
+            <Link to="#wallets" className="link">
               <i className="fa fa-wallet mr-2"></i> Hodl
-            </a>
+            </Link>
           </li>
           <li className="majorLink">
-            <a
-              href="https://RachCoin.com/labs/"
-              target="_blank"
-              rel="noopener"
-              className="link"
-            >
+            <Link to="#build" className="link">
               <i className="fa fa-building mr-2"></i> Build
-            </a>
+            </Link>
           </li>
         </ul>
       </div>
@@ -67,15 +60,14 @@ const HeroSection = () => {
       <ul>
         {socialMenuItems.map((item, index) => (
           <li key={index} className="pb-2">
-            <a
-              href={item.href}
+            <Link to={item.href}
               target="_blank"
               rel="noopener"
               className="flex items-center space-x-2"
             >
               <span className="relative text-white-700">{item.label}</span>
               <i className={`${item.icon} text-yellow-500`}></i>
-            </a>
+            </Link>
           </li>
         ))}
       </ul>

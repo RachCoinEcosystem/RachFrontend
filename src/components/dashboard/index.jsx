@@ -1,26 +1,40 @@
-import React from 'react'
-import {BrowserRouter as Router, Routes, Route, Navigate} from 'react-router-dom'
-import Layout from './Layout'
-import Setting from "./Setting";
-import Exchange from "./Exchange";
-import User from "./User";
-import Transaction from "./Transaction";
-import Wallet from "./Wallet";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Layout from "./Layout";
+import Profile from "./pages/UserProfile";
+import Setting from "./pages/Setting";
+import Transaction from "./pages/Transaction";
+import Wallet from "./pages/Wallet";
+import Staking from "./pages/Staking";
+import Pool from "./pages/Pool";
+import Minter from "./pages/Minter";
+import Exchange from "./pages/Exchange";
+import NftMarket from "./pages/NftMarket";
+import Trading from "./pages/Trading";
+import Vote from "./pages/Vote";
+import Rpg from "./pages/Rpg";
 
-function Dashboard() {
+
+const Dashboard = () => {
   return (
     <Router>
       <Routes>
-        <Route path="/dashboard/*" element={<Layout />}>
-          <Route path="/auth/profile" element={<User />} />
-          <Route path="/auth/exchange" element={<Exchange />} />
-          <Route path="/auth/setting" element={<Setting />} />
-          <Route path="/auth/transaction" element={<Transaction />} />
-          <Route path="/auth/wallet" element={<Wallet />} />
+        <Route  element={<Layout />} path="/dashboard/*">
+            <Route  element={<Profile />} path="analytics/profile" />
+            <Route  element={<Setting />} path="analytics/setting" />
+            <Route  element={<Transaction />} path="analytics/history" />
+            <Route  element={<Wallet />} path="analytics/wallet" />
+            <Route  element={<Staking />} path="earn/staking" />
+            <Route  element={<Pool />} path="earn/pool" />
+            <Route  element={<Minter />} path="earn/minter" />
+            <Route  element={<Exchange />} path="market/exchange" />
+            <Route  element={<NftMarket />} path="market/nft-market" />
+            <Route  element={<Trading />} path="market/buy-sell" />
+            <Route  element={<Vote />} path="govern/vote" />
+            <Route  element={<Rpg />} path="game/rpg" />
         </Route>
       </Routes>
     </Router>
-  )
-}
+  );
+};
 
-export default Dashboard
+export default Dashboard;

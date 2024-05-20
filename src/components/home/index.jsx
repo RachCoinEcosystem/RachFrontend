@@ -7,7 +7,7 @@ import Product from "./Product";
 import backgroundImage from "../../assets/bg/bg-1.jpg";
 
 
-const frontPage = () => (
+const FrontPage = () => (
   <div>
     <div
       style={{
@@ -27,4 +27,4 @@ const frontPage = () => (
   </div>
 );
 
-export default frontPage;
+export default FrontPage;
