@@ -55,10 +55,10 @@ const Navbar = () => {
           </div>
         </div>
         {mobileDrawerOpen && (
-          <div className="fixed right-0 z-20 bg-neutral-900 w-full p-12 flex flex-col justify-center items-center lg:hidden">
+          <div className="fixed right-0 z-20 bg-neutral-900 w-full p-12 flex flex-col justify-center items-center text-white lg:hidden ">
             <ul>
               {navItems.map((item, index) => (
-                <li key={index} className="py-4">
+                <li key={index} className="py-4 hover:bg-yellow-500">
                   <Link to={item.href}>{item.label}</Link>
                 </li>
               ))}

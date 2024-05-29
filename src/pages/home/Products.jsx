@@ -7,16 +7,15 @@ import Farming from "../../assets/images/farming.webp";
 import { Link } from "react-router-dom";
 import ProductCard from "../../components/ProductCard";
 
-
 const Products = () => {
   return (
     <div className="container mx-auto py-8 xl:px-24">
-      <h3 className="text-sm sm:text-6xl lg:text-5xl text-center tracking-wide mt-20 text-white">
+      <h4 className="text-4xl sm:text-5xl lg:text-6xl text-center font-extrabold tracking-wide mb-8 text-white">
         RachCoin
         <span className="bg-gradient-to-r from-yellow-500 to-yellow-700 text-transparent bg-clip-text">
-          {" "}Products
+           Products
         </span>
-      </h3>
+      </h4>
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-10">
         <ProductCard
