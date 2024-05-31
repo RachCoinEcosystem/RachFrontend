@@ -6,6 +6,19 @@ import backgroundImage from "/bg-1.jpg";
 import Login from "../pages/auth/Login";
 import ResetPassword from "../pages/auth/ResetPassword";
 import Signup from "../pages/auth/Signup";
+import Dashboard from "../pages/dashboard/layout/Dashboard";
+import Wallet from "../pages/dashboard/pages/Wallet";
+import CurrencyExchange from "../pages/dashboard/pages/CurrencyExchange";
+import Profile from "../pages/dashboard/pages/Profile";
+import History from "../pages/dashboard/pages/Transaction";
+import Staking from "../pages/dashboard/pages/Staking";
+import NftMinter from "../pages/dashboard/pages/Minter";
+import NftMarket from "../pages/dashboard/pages/NftMarket";
+import Pool from "../pages/dashboard/pages/Pool";
+import Trading from "../pages/dashboard/pages/Trading";
+import Vote from "../pages/dashboard/pages/Vote";
+import Games from "../pages/dashboard/pages/Rpg";
+
 
 const BackgroundWrapper = ({ children }) => (
   <div
@@ -59,6 +72,58 @@ const router = createBrowserRouter([
       </BackgroundWrapper>
     ),
   },
+  {
+    path: "/dashboard",
+    element: <Dashboard />,
+    children: [
+      {
+        index: true,
+        element: <Wallet />,
+      },
+      {
+        path: "currency-exchange",
+        element: <CurrencyExchange />,
+      },
+      {
+        path: "profile",
+        element: <Profile />,
+      },
+      {
+        path: "history",
+        element: <History />,
+      },
+      {
+        path: "stake",
+        element: <Staking />,
+      },
+      {
+        path: "nft-minter",
+        element: <NftMinter />,
+      },
+      {
+        path: "nft-market",
+        element: <NftMarket />,
+      },
+      {
+        path: "pool",
+        element: <Pool />,
+      },
+      {
+        path: "trading",
+        element: <Trading />,
+      },
+      {
+        path: "vote",
+        element: <Vote />,
+      },
+      {
+        path: "game",
+        element: <Games />,
+      },
+
+    ],
+  },
 ]);
 
 export default router;
+
