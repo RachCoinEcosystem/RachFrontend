@@ -6,7 +6,7 @@ function AboutSection() {
       <h4 className="text-4xl sm:text-5xl lg:text-6xl text-center font-extrabold tracking-wide mb-8 text-white">
         Token Info
         <span className="bg-gradient-to-r from-yellow-500 to-yellow-700 text-transparent bg-clip-text">
-          & Distrib.
+        &nbsp; & Distrib.
         </span>
       </h4>
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center w-full max-w-4xl">

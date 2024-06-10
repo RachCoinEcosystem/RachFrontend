@@ -7,7 +7,7 @@ import Footer from '../components/Footer';
 
 const Dashboard = () => {
   return (
-    <div className="flex h-screen">
+    <div className="flex min-h-screen">
       <Sidebar />
       <div className="flex flex-col flex-1">
         <Header />

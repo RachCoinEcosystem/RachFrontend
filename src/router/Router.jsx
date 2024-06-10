@@ -13,11 +13,13 @@ import Profile from "../pages/dashboard/pages/Profile";
 import History from "../pages/dashboard/pages/Transaction";
 import Staking from "../pages/dashboard/pages/Staking";
 import NftMinter from "../pages/dashboard/pages/Minter";
-import NftMarket from "../pages/dashboard/pages/NftMarket";
+import NftMarketplace from "../pages/dashboard/pages/NftMarket";
 import Pool from "../pages/dashboard/pages/Pool";
 import Trading from "../pages/dashboard/pages/Trading";
 import Vote from "../pages/dashboard/pages/Vote";
 import Games from "../pages/dashboard/pages/Rpg";
+import Ads from "../pages/dashboard/pages/Ads";
+import Setting from "../pages/dashboard/pages/Setting";
 
 
 const BackgroundWrapper = ({ children }) => (
@@ -102,7 +104,7 @@ const router = createBrowserRouter([
       },
       {
         path: "nft-market",
-        element: <NftMarket />,
+        element: <NftMarketplace />,
       },
       {
         path: "pool",
@@ -119,6 +121,14 @@ const router = createBrowserRouter([
       {
         path: "game",
         element: <Games />,
+      },
+      {
+        path: "ads",
+        element: <Ads />,
+      },
+      {
+        path: "settings",
+        element: <Setting />,
       },
 
     ],

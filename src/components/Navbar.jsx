@@ -27,7 +27,7 @@ const Navbar = () => {
               src={logo}
               alt="Logo"
             />
-            <span className="text-xl tracking-tight text-white">
+            <span className="text-xl tracking-tight text-yellow-500">
               <b>RACHCOIN</b>
             </span>
           </Link>

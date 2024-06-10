@@ -1,12 +1,17 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Outlet } from "react-router-dom";
 import Navbar from "../components/Navbar";
-import Footer from '../components/Footer'
+import Footer from "../components/Footer";
 import backgroundImage from "/bg-1.jpg";
 
 function Main() {
+  useEffect(() => {
+    const img = new Image();
+    img.src = backgroundImage;
+  }, []);
+
   return (
-    <div
+    <div className="min-h-screen"
       style={{
         backgroundImage: `url(${backgroundImage})`,
         backgroundSize: "cover",

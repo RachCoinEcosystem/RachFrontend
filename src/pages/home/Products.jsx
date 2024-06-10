@@ -13,7 +13,7 @@ const Products = () => {
       <h4 className="text-4xl sm:text-5xl lg:text-6xl text-center font-extrabold tracking-wide mb-8 text-white">
         RachCoin
         <span className="bg-gradient-to-r from-yellow-500 to-yellow-700 text-transparent bg-clip-text">
-           Products
+        &nbsp; Products
         </span>
       </h4>
 

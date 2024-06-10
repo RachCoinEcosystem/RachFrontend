@@ -45,7 +45,7 @@ const Partners = () => {
       <h4 className="text-4xl sm:text-5xl lg:text-6xl text-center font-extrabold tracking-wide mb-8 text-white">
         Partners
         <span className="bg-gradient-to-r from-yellow-500 to-yellow-700 text-transparent bg-clip-text">
-          & Stakeholders
+        &nbsp; & Stakeholders
         </span>
       </h4>
       <p className="mb-8 text-center text-lg text-white">

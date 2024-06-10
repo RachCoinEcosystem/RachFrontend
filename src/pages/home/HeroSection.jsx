@@ -91,7 +91,7 @@ const HeroSection = () => {
         </ul>
       </div>
       <div className="fixed top-1/2 right-3 transform -translate-y-1/2">
-        <button onClick={toggleSocialMenu} className="bg-neutral-800 p-4 rounded-lg shadow-lg">
+        <button onClick={toggleSocialMenu} className="bg-neutral-800 p-4 rounded-lg shadow-lg"><span className=" text-yellow-500" >9</span>
           <FaBell className="text-2xl text-yellow-500" />
         </button>
         {showSocialMenu && (
