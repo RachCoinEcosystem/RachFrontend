@@ -34,42 +34,42 @@ function Explore() {
           image={tokenFarmImg}
           title="Token Farming"
           description="Participate in farming to earn RachCoins by staking your tokens."
-          link="/farming"
+          link="/dashboard/farming"
           linkText="Start Farming"
         />
         <Card
           image={stakingImg}
           title="Staking"
           description="Stake your RachCoins to earn rewards and secure the network."
-          link="/stake"
+          link="/dashboard/stake"
           linkText="Start Staking"
         />
         <Card
           image={microJobImg}
           title="Micro-Jobs"
           description="Complete micro jobs to earn RachCoins for small tasks."
-          link="/micro-jobs"
+          link="/dashboard/micro-jobs"
           linkText="Find Jobs"
         />
         <Card
           image={nftImg}
           title="NFT Creation/Trading"
           description="Create and trade NFTs on our platform to earn RachCoins."
-          link="/nft"
+          link="/dashboard/nft"
           linkText="Start Creating"
         />
         <Card
           image={paidReadImg}
           title="Paid to Read Ads"
           description="Broadcast your ads to our audience and pay with RachCoins."
-          link="/inbox"
+          link="/dashboard/inbox"
           linkText="Broadcast Ads"
         />
         <Card
           image={earnRachCoinImg}
           title="Earn RachCoin"
           description="Earn RachCoins by completing tasks, referrals, and more."
-          link="/friends"
+          link="/dashboard/friends"
           linkText="Start Earning"
         />
       </section>
